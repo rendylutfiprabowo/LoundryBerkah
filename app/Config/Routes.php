@@ -42,8 +42,11 @@ $routes->get('/landingpage/testimoni', 'LandingpageController::testimoni');
 $routes->get('/landingpage/layanantambahan', 'LandingpageController::layanantambahan');
 $routes->get('/landingpage/hubungikami', 'LandingpageController::hubungikami');
 
+
+
 $routes->get('/masuk', 'LoundryController::masuk');
 $routes->get('/daftar', 'RegisterController::daftarakun');
+$routes->get('/buatakun', 'RegisterController::buatakun');
 
 $routes->get('/home', 'LoundryController::index');
 $routes->get('/riwayattransaksi', 'LoundryController::riwayattransaksi');

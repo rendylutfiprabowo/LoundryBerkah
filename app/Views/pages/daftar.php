@@ -35,7 +35,7 @@
                                 </div>
                             <?php endif; ?>
 
-                            <form action="#" class="signin-form">
+                            <form action="/buatakun" class="signin-form">
                                 <?= csrf_field(); ?>
                                 <div class="form-group mb-3">
                                     <label class="label" for="email">Email</label>
