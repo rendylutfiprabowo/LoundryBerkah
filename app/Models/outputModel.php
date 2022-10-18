@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class outputModel extends Model
 {
-    protected $table= 'pemasukan';
+    protected $table = 'pemasukan';
 
     public function get_all()
     {
@@ -22,12 +22,12 @@ class outputModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['tgl_pemasukan','jumlah_pemasukan'];
+    protected $allowedFields    = ['tgl_pemasukan', 'jumlah_pemasukan'];
 
     // Dates
     protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
+    protected $createdField  = '';
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 

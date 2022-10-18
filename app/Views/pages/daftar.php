@@ -35,27 +35,27 @@
                                 </div>
                             <?php endif; ?>
 
-                            <form action="/buatakun" class="signin-form">
+                            <form action="/buatakun" class="signin-form" method="GET">
                                 <?= csrf_field(); ?>
                                 <div class="form-group mb-3">
                                     <label class="label" for="email">Email</label>
-                                    <input type="email" class="form-control" placeholder="Email" required autofocus>
+                                    <input type="email" class="form-control" placeholder="Email" name="email" id="email" required autofocus>
                                 </div>
                                 <div class="form-group mb-3">
                                     <label class="label" for="namalengkap">Nama Lengkap</label>
-                                    <input type="text" class="form-control" placeholder="namalengkap" required>
+                                    <input type="text" class="form-control" placeholder="namalengkap" name="namalengkap" id="namalengkap" required>
                                 </div>
                                 <div class="form-group mb-3">
-                                    <label class="label" for="name">Username</label>
-                                    <input type="text" class="form-control" placeholder="Username" required>
+                                    <label class="label" for="username">Username</label>
+                                    <input type="text" class="form-control" placeholder="Username" name="username" id="username" required>
                                 </div>
                                 <div class="form-group mb-3">
                                     <label class="label" for="password">Password</label>
-                                    <input type="password" class="form-control" placeholder="Password" required>
+                                    <input type="password" class="form-control" placeholder="Password" name="password" id="password" required>
                                 </div>
                                 <div class="form-group mb-3">
                                     <label class="label" for="passwordkonfirmasi">Password Konfirmasi</label>
-                                    <input type="password" class="form-control" placeholder="passwordkonfirmasi" required>
+                                    <input type="password" class="form-control" placeholder="passwordkonfirmasi" name="passwordkonfirmasi" id="passwordkonfirmasi" required>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="form-control btn btn-primary rounded submit px-3">Daftar</button>

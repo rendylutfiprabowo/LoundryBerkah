@@ -46,6 +46,7 @@ $routes->get('/landingpage/hubungikami', 'LandingpageController::hubungikami');
 
 $routes->get('/masuk', 'LoundryController::masuk');
 $routes->get('/daftar', 'RegisterController::daftarakun');
+$routes->post('/buatakun', 'RegisterController::buatakun');
 $routes->get('/buatakun', 'RegisterController::buatakun');
 
 $routes->get('/home', 'LoundryController::index');

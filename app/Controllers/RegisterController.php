@@ -27,7 +27,7 @@ class RegisterController extends BaseController
                 'rules' => 'required|min_length[5]|is_unique[user.username]',
                 'errors' => [
                     'required' => '{field} Harus diisi',
-                    'min_length' => '{field} Minimal 4 Karakter',
+                    'min_length' => '{field} Minimal 5 Karakter',
                     'max_length' => '{field} Maksimal 20 Karakter',
                     'is_unique' => 'Username sudah digunakan sebelumnya'
                 ]
@@ -36,7 +36,7 @@ class RegisterController extends BaseController
                 'rules' => 'required|min_length[5]|max_length[50]',
                 'errors' => [
                     'required' => '{field} Harus diisi',
-                    'min_length' => '{field} Minimal 4 Karakter',
+                    'min_length' => '{field} Minimal 5 Karakter',
                     'max_length' => '{field} Maksimal 50 Karakter'
                 ]
             ],
@@ -44,7 +44,7 @@ class RegisterController extends BaseController
                 'rules' => 'required|min_length[5]|max_length[50]',
                 'errors' => [
                     'required' => '{field} Harus diisi',
-                    'min_length' => '{field} Minimal 4 Karakter',
+                    'min_length' => '{field} Minimal 5 Karakter',
                     'max_length' => '{field} Maksimal 50 Karakter'
                 ]
             ],
@@ -61,7 +61,7 @@ class RegisterController extends BaseController
                 'errors' => [
                     'matches' => 'Konfirmasi Password tidak sesuai dengan password',
                 ]
-            ],
+            ]
         ])) {
             session()->setFlashdata('error', $this->validator->listErrors());
             return redirect()->back()->withInput();
