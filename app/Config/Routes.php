@@ -35,14 +35,22 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'LoundryController::index');
+$routes->get('/', 'LandingpageController::index');
+$routes->get('/landingpage/paketlayanan', 'LandingpageController::paketlayanan');
+$routes->get('/landingpage/tentangkami', 'LandingpageController::tentangkami');
+$routes->get('/landingpage/testimoni', 'LandingpageController::testimoni');
+$routes->get('/landingpage/layanantambahan', 'LandingpageController::layanantambahan');
+$routes->get('/landingpage/hubungikami', 'LandingpageController::hubungikami');
+
+$routes->get('/masuk', 'LoundryController::masuk');
+$routes->get('/daftar', 'RegisterController::daftarakun');
+
 $routes->get('/home', 'LoundryController::index');
 $routes->get('/riwayattransaksi', 'LoundryController::riwayattransaksi');
-$routes->get('/paketlayanan', 'LoundryController::paketlayanan');
-$routes->get('/tentangkami', 'LoundryController::tentangkami');
-$routes->get('/layanantambahan', 'LoundryController::layanantambahan');
+
+
 $routes->get('/testimoni', 'LoundryController::testimoni');
-$routes->get('/hubungikami', 'LoundryController::hubungikami');
+
 
 $routes->get('/pesanlayanan', 'LoundryController::pesanlayanan');
 

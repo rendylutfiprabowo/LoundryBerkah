@@ -9,8 +9,8 @@ class Home extends BaseController
 {
     public function index()
     {
-        $outputModel = new Output();
-        $output = $outputModel->findAll();
+        $output = new outputModel();
+        $output = $output->findAll();
         $data = [
             'title' => 'Output',
             'output' => $output
@@ -28,6 +28,8 @@ class Home extends BaseController
         return view('/tambahdata', $data);
     }
 
+    
+
     public function simpandata()
     {
         if (!$this->validate(
@@ -38,12 +40,13 @@ class Home extends BaseController
         )) {
             return redirect()->to('/tambahdata');
         }
-        $OutputModel = new Output();
+        $output = new outputModel();
+
         $data = [
             'tgl_pemasukan' => $this->request->getPost('tgl_pemasukan'),
             'jumlah_pemasukan' => $this->request->getPost('jumlah_pemasukan')
         ];
-        $OutputModel->save($data);
+        $output->save($data);
 
         return redirect()->to('/output');
     }
