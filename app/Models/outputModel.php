@@ -15,19 +15,19 @@ class outputModel extends Model
     }
 
     protected $DBGroup          = 'default';
-    // protected $table            = 'pemasukan';
+    // protected $table           = 'pemasukan';
     protected $primaryKey       = 'id_pemasukan';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['tgl_pemasukan', 'jumlah_pemasukan'];
+    protected $allowedFields    = ['jumlah_pemasukan'];
 
     // Dates
     protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
-    protected $createdField  = '';
+    protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 
