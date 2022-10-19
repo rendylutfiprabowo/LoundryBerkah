@@ -1,4 +1,4 @@
-<?= $this->extend('templates/templatelandingpage'); ?>
+<!-- <?= $this->extend('templates/templatelandingpage'); ?>
 <?= $this->section('content'); ?>
 
 <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -558,4 +558,4 @@
     </div>
 </div>
 
-<?= $this->endsection('content'); ?>
+<?= $this->endsection('content'); ?> -->
